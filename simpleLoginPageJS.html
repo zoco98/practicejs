@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<script type = "text/javascript">
+function helloUser(){
+var username="sri";
+if(username==document.getElementById("username").value){
+var message= "hello" + " " + document.getElementById("username").value;
+document.write(message);
+loopcontrol();
+}else{
+alert("go to hell");
+}
+}
+function loopcontrol(){
+var user = {Name:"sri",Roll:101,Age:23,Designation:"engineer",Phno:"5644464654"};
+var detail;
+for(detail in user){
+document.write("<br/> " + detail +":"+user[detail] + "<br/> ");
+}
+}
+
+</script>
+</head>
+<body>
+User name: <input type="text" id="username" placeholder="Enter User name"/><br/><br/>
+Password: <input type="password" id="password" placeholder="Enter password"/><br/><br/>
+<input type = "button" onclick = "helloUser()" value = "Say Hello">
+
+</body>
+</html>
